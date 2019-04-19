@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SearchForm from './SearchFrom'
+import SearchForm from './SearchForm';
+import bgImage3 from '../assets/images/bgImage3.jpg';
 
 function Search(props){
 
@@ -9,15 +10,15 @@ function Search(props){
     <div className="hero">
     <style jsx>{`
       h1 {
-        color: white;
+        color: black;
       }
 
       p {
-        color: white;
+        color: black;
       }
 
       .hero {
-        background-image: url('../../assets/img/bg-image2.jpg');
+        background-image: 'url(${bgImage3})';
         background-position: center;
         background-size: 100%;
         height: 90vh;
@@ -52,13 +53,6 @@ function Search(props){
         margin: 24px 0;
       }
 
-      input {
-        width: 560px;
-        height: 70px;
-        border-radius: 5px;
-        border-width: 0;
-        padding: 22px 0px 22px 24px;
-      }
     `}</style>
       <div className="hero-container">
         <div className="hero-heading">
@@ -66,24 +60,15 @@ function Search(props){
           <p>We'll help you find a place you'll love.</p>
         </div>
         <SearchForm/>
-        // <div className="hero-search-bar">
-        //   <input placeholder="Enter an address, neighborhood, city, or ZIP code">
-        // </div>
+
       </div>
     </div>
-    // <div style={ticketStyles} className='hover-shadow' data-aos='fade-in'>
-    //   <h3>{props.location} - {props.names}</h3>
-    //   <p><em>{props.issue}</em></p>
-    // </div>
+
   );
 }
 
 // Ticket.propTypes = {
-//   names: PropTypes.string.isRequired,
-//   location: PropTypes.string.isRequired,
-//   issue: PropTypes.string
+//   query: PropTypes.string
 // };
 
 export default Search;
-
-// edit edit

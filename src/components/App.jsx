@@ -11,7 +11,7 @@ function App(){
     <div>
       <Nav/>
       <Switch>
-        <Route exact path='/' component={TicketList} />
+        <Route exact path='/' component={Search} />
         <Route exact path='/newticket' component={NewTicketForm} />
         <Route component={Error404}/>
       </Switch>
