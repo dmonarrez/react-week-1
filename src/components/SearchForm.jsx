@@ -21,7 +21,7 @@ function SearchForm(){
         type='text'
         id='search'
         placeholder='Enter an address, neightborhood, city, or ZIP code'/>
-      <button type='submit'></button>
+      <button type='submit'>Search</button>
     </div>
   );
 }

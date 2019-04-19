@@ -60,7 +60,6 @@ function Search(props){
           <p>We'll help you find a place you'll love.</p>
         </div>
         <SearchForm/>
-
       </div>
     </div>
 

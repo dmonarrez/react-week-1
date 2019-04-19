@@ -1,18 +1,16 @@
-# _React Template_
+# _Zillow React Clone_
 
-## _DO NOT TOUCH THE `Webpack-dev-server` dependency unless you know what your doing. If you update it there will be errors that break the application!_
-
-#### _This is a template using webpack for React, 04/15/19_
-
-#### By _**Ryan McLean**_
+#### By _**David Monarrez**_
 
 ## Description
 
 <!-- include thoughts on the difference in development process in angular and react -->
 
-_This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling_
+_This project is a clone of the Zillow website created in React after the site was previously cloned in Angluar. This is practice for React fundimentals and does not include the use of state_
 
 _styling in react is probably the biggest difference that I am dealing with in the change from angular to react. It is odd not using a traditional stylesheet but it is nice to have everything associated with a single component to be located in a single jsx file_
+
+_I find my self having to break things up into much smaller components than I did in angular. for example i have broken down the search bar component to its simplest from so that I can reuse it at different times in other components_
 
 ## Component structure
 
@@ -20,6 +18,7 @@ _styling in react is probably the biggest difference that I am dealing with in t
 
 ## Notes
 
+ _Had more issues than expected getting the background image to load. finding that I am having to do a little more finagling than before to get the propper styles but likly due to not being quite used to it yet_
 
 ## Setup/Installation Requirements
 
