@@ -8,7 +8,16 @@
 
 ## Description
 
+<!-- include thoughts on the difference in development process in angular and react -->
+
 _This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling_
+
+## Component structure
+
+![component structure](src/assets/images/zillow-tree.jpg)
+
+## Notes
+
 
 ## Setup/Installation Requirements
 
