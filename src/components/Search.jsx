@@ -4,25 +4,25 @@ import SearchForm from './SearchForm';
 import bgImage3 from '../assets/images/bgImage3.jpg';
 
 function Search(props){
+  let backgroundStyles = {
+    backgroundImage: "url(" + bgImage3 + ")",
+    backgroundPosition: "center",
+    backgroundSize: "100%",
+    height: "90vh",
+  }
 
   return (
 
-    <div className="hero">
+    <div style={backgroundStyles}>
     <style jsx>{`
       h1 {
-        color: black;
+        color: white;
       }
 
       p {
-        color: black;
+        color: white;
       }
 
-      .hero {
-        background-image: 'url(${bgImage3})';
-        background-position: center;
-        background-size: 100%;
-        height: 90vh;
-      }
       //start hero container
       .hero-container {
         display: flex;
