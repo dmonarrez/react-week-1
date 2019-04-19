@@ -12,6 +12,8 @@ _styling in react is probably the biggest difference that I am dealing with in t
 
 _I find my self having to break things up into much smaller components than I did in angular. for example i have broken down the search bar component to its simplest from so that I can reuse it at different times in other components_
 
+_Realizing that as I continue to build out the clone that my component tree may need to be edited to incorperate more components that I have ended up needing to make_
+
 ## Component structure
 
 ![component structure](src/assets/images/zillow-tree.jpg)
