@@ -12,6 +12,8 @@
 
 _This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling_
 
+_styling in react is probably the biggest difference that I am dealing with in the change from angular to react. It is odd not using a traditional stylesheet but it is nice to have everything associated with a single component to be located in a single jsx file_
+
 ## Component structure
 
 ![component structure](src/assets/images/zillow-tree.jpg)
