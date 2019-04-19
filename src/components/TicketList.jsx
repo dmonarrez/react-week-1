@@ -53,7 +53,6 @@ const masterTicketList = [
 function TicketList(){
   return (
     <div>
-      <img src={stewie}></img>
       <hr/>
       {masterTicketList.map((ticket, index) =>
         <Ticket names={ticket.names}
