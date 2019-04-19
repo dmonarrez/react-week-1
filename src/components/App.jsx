@@ -1,6 +1,6 @@
 import React from 'react';
 import TicketList from './TicketList';
-import Header from './Header';
+import Nav from './Nav';
 import { Switch, Route } from 'react-router-dom';
 import NewTicketForm from './NewTicketForm';
 import Error404 from './Error404';
@@ -8,7 +8,7 @@ import Error404 from './Error404';
 function App(){
   return (
     <div>
-      <Header/>
+      <Nav/>
       <Switch>
         <Route exact path='/' component={TicketList} />
         <Route exact path='/newticket' component={NewTicketForm} />
