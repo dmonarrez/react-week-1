@@ -4,6 +4,7 @@ import Nav from './Nav';
 import { Switch, Route } from 'react-router-dom';
 import NewTicketForm from './NewTicketForm';
 import Error404 from './Error404';
+import Search from './Search';
 
 function App(){
   return (

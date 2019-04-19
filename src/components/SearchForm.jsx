@@ -14,4 +14,4 @@ function SearchForm(){
   );
 }
 
-export default NewTicketForm;
+export default SearchForm;
