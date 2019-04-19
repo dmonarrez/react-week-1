@@ -21,6 +21,8 @@ _Realizing that as I continue to build out the clone that my component tree may 
 ## Notes
 
  _Had more issues than expected getting the background image to load. finding that I am having to do a little more finagling than before to get the propper styles but likly due to not being quite used to it yet_
+ 
+ _Unforseen (though not totally unexpected) issues trying to get bootstrap to play nicely with react._
 
 ## Setup/Installation Requirements
 
