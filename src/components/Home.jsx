@@ -7,6 +7,7 @@ function Home() {
   <div>
     <Search/>
     <Body/>
+    <BodyCard/>
   </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Ticket from './Ticket';
-import stewie from '../assets/images/stewie.png';
 
 const masterTicketList = [
   {
