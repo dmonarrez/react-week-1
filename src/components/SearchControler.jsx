@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from "prop-types";
+
 
 class SearchControler extends React.Component {
 
@@ -16,13 +18,23 @@ class SearchControler extends React.Component {
     console.log('resultsVisible is currently set to:' + this.state.formVisibleOnPage);
   }
 
-  render() {
+  render(){
+    let currentlyVisibleContent = null;
+    if (this.state.resultsVisible){
+      currentlyVisibleContent = <Home />;
+    } else {
+      currentlyVisibleContent = <ConfirmationQuestions />; //should be the page that shows the search results
+    }
     return (
       <div>
-        
+        {currentlyVisibleContent}
       </div>
-    ); // end of return
-  } //end of render
+    );
+  }
 }
+
+SearchControler.propTypes = {
+  onSearch: PropTypes.func
+};
 
 export default SearchControler;
