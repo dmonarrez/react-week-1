@@ -9,6 +9,10 @@ class SearchForm extends React.Component {
     };
   }
 
+  handleClick(){
+    console.log('Hey, you clicked me! I do not have code to change my state quite yet, but I will in a moment!');
+  }
+
   render() {
     return (
       <div>
@@ -30,7 +34,7 @@ class SearchForm extends React.Component {
           type='text'
           id='search'
           placeholder='Enter an address, neightborhood, city, or ZIP code'/>
-        <button type='submit'>Search</button>
+        <button type='submit' onClick={this.handleClick}>Search</button>
       </div>
     ); // end of return
   } //end of render

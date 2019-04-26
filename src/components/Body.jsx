@@ -1,5 +1,5 @@
 import React from 'react';
-import BodyCard from './Card';
+// import BodyCard from './Card';
 
 function Body() {
   return(
@@ -11,11 +11,11 @@ function Body() {
         border: none;
         background-color: rgb(255, 210, 55);
       }
-      
+
       .mission {
         margin: 0 10vw;
       }
-      
+
       p {
         font-family: "Ivar Headline", "Times New Roman", serif;
         font-size: 32px;
@@ -33,7 +33,6 @@ function Body() {
         <p>We’re reimagining how you buy, sell and rent. It’s now easier to get into a place you love. So let’s do this, together.</p>
       </div>
       <hr></hr>
-      <BodyCard/>
     </div>
   );
 }
