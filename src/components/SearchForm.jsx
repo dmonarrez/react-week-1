@@ -7,10 +7,12 @@ class SearchForm extends React.Component {
     this.state = {
       resultsVisible: false
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleClick(){
-    console.log('Hey, you clicked me! I do not have code to change my state quite yet, but I will in a moment!');
+  handleSubmit(){
+    this.setState({resultsVisible: true});
+    console.log('resultsVisible is currently set to:' + this.state.formVisibleOnPage);
   }
 
   render() {
@@ -30,11 +32,13 @@ class SearchForm extends React.Component {
             width: 40;
           }
         `}</style>
-        <input
-          type='text'
-          id='search'
-          placeholder='Enter an address, neightborhood, city, or ZIP code'/>
-        <button type='submit' onClick={this.handleClick}>Search</button>
+        <form onSubmit={this.handleSubmit}>
+          <input
+            type='text'
+            id='search'
+            placeholder='Enter an address, neightborhood, city, or ZIP code'/>
+            <button type='submit'>Search</button>
+        </form>
       </div>
     ); // end of return
   } //end of render
