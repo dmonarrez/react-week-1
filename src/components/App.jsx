@@ -11,13 +11,13 @@ class App extends React.Component {
   componentDidMount() {
     document.title = "Zillow";
   }
-  render() {    
+  render() {
     return (
       <div>
         <Nav/>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/newticket' component={NewTicketForm} />
+          <Route exact path='/newticket' component={NewTicketForm} /> //this needs to change to the page that will display the output of the search
           <Route component={Error404}/>
         </Switch>
         <h1 style={{height: '50px'}}></h1>
