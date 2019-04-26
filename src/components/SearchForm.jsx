@@ -1,11 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class SearchForm extends React.Component {
+function SearchForm(props) {
   let _search = null;
 
   function handleFormSubmission(event) {
     event.preventDefault();
     console.log(_search.value);
+    props.onSearch({newSearch: _search.value})
+    _search.value = '';
   }
 
   return (
@@ -34,6 +37,10 @@ class SearchForm extends React.Component {
       </form>
     </div>
   );
+
+  SearchForm.propTypes = {
+    onSearch: PropTypes.func
+  }
 }
 
 export default SearchForm;

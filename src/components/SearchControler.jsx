@@ -21,7 +21,7 @@ class SearchControler extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.resultsVisible){
-      currentlyVisibleContent = <Home />;
+      currentlyVisibleContent = <SearchForm onSearch={this.props.onSearch}/>;
     } else {
       currentlyVisibleContent = <ConfirmationQuestions />; //should be the page that shows the search results
     }
