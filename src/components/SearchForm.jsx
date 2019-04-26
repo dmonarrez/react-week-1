@@ -1,9 +1,14 @@
 import React from 'react';
 
 function SearchForm(){
+
+  function handleFormSubmission(event) {
+    event.preventDefault();
+  }
+
   return (
     <div>
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           type='text'
           id='search'
