@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SearchForm(){
+class SearchForm extends React.Component {
   let _search = null;
 
   function handleFormSubmission(event) {
