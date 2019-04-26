@@ -17,12 +17,15 @@ _Realizing that as I continue to build out the clone that my component tree may 
 ## Component structure
 
 ![component structure](src/assets/images/zillow-tree.jpg)
+_Component structrue needs to be redone. Feels like I can always use another component_
 
 ## Notes
 
  _Had more issues than expected getting the background image to load. finding that I am having to do a little more finagling than before to get the propper styles but likly due to not being quite used to it yet_
- 
+
  _Unforseen (though not totally unexpected) issues trying to get bootstrap to play nicely with react._
+
+ _Having a hard time getting used to passing dynamic stateful data to children and grand children. I need this function to be passed to the grnadchild but it still doenst recognize it despite it being passed as a prop_
 
 ## Setup/Installation Requirements
 

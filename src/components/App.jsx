@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TicketList from './TicketList';
+import HouseList from './HouseList';
 import Nav from './Nav';
 import { Switch, Route } from 'react-router-dom';
 import NewTicketForm from './NewTicketForm';
@@ -32,7 +32,8 @@ class App extends React.Component {
         <Nav/>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/newticket' render={()=><SearchControler onSearch={this.handleAddingSearchToList} /> //this needs to change to the page that will display the output of the search
+          <Route exact path='/houseList' render={()=><HouseList HouseList={this.state.masterHouseList} />} />
+          <Route exact path='/searchForm' render={()=><SearchControler onSearch={this.handleAddingSearchToList} />} /> //this needs to change to the page that will display the output of the search
           <Route component={Error404}/>
         </Switch>
         <h1 style={{height: '50px'}}></h1>
