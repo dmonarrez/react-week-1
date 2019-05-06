@@ -8,8 +8,7 @@ function TheHouses(props) {
         <p>{props.price}</p>
         <p>{props.specs}</p>
         <p>{props.address}</p>
-        <button>Buy</button>
-        <button>Remove</button>
+        <button>Add</button>
       </div>
     </div>
   );
