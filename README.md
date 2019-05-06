@@ -16,7 +16,7 @@ _Realizing that as I continue to build out the clone that my component tree may 
 
 ## Component structure
 
-![component structure](src/assets/images/zillow-tree.jpg)
+![component structure](src/assets/images/zillow-diagram-2.png)
 _Component structrue needs to be redone. Feels like I can always use another component_
 
 ## Notes
