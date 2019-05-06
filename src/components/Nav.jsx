@@ -33,8 +33,13 @@ function Nav(){
     `}</style>
 
       <div className="nav-left">
-        <a href="#">Buy</a>
-        <a href="#">Rent</a>
+
+        <Link to='/Buy' style={{textDecoration: 'none'}}>
+          <a>Buy</a>
+        </Link>
+        <Link to='/Rent' style={{textDecoration: 'none'}}>
+          <a>Rent</a>
+        </Link>
         <a href="#">Sell</a>
         <a href="#">Mortgages</a>
         <a href="#">Agent Finder</a>

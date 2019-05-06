@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import HouseList from './HouseList';
 import Nav from './Nav';
 import { Switch, Route } from 'react-router-dom';
-import NewTicketForm from './NewTicketForm';
 import Error404 from './Error404';
 import Home from './Home';
+import SearchControler from './SearchControler'
 
 class App extends React.Component {
 
@@ -26,6 +26,7 @@ class App extends React.Component {
   componentDidMount() {
     document.title = "Zillow";
   }
+  
   render() {
     return (
       <div>
