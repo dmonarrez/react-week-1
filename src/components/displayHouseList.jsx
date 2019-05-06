@@ -29,3 +29,8 @@ function DisplayHouseList(){
 }
 
 export default DisplayHouseList;
+
+//I have some questions about where I should use state in this instance whether it should
+//be here or in HouseList.jsx. At this point all I want to do is be able to add/remove houses from the
+//list to a new list of bookmarked houses and then let the user 'Buy' the house.
+// this is the last stage of the application 
