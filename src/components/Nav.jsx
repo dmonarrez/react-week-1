@@ -37,9 +37,6 @@ function Nav(){
         <Link to='/Buy' style={{textDecoration: 'none'}}>
           <a>Buy</a>
         </Link>
-        <Link to='/Rent' style={{textDecoration: 'none'}}>
-          <a>Rent</a>
-        </Link>
         <a href="#">Sell</a>
         <a href="#">Mortgages</a>
         <a href="#">Agent Finder</a>
@@ -57,10 +54,6 @@ function Nav(){
       </div>
     </div>
 
-    // <div>
-    //   <h1 className='bg-grn header'>Help Queue!</h1>
-    //   <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
-    // </div>
   );
 }
 
