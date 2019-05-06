@@ -29,7 +29,7 @@ _Component structrue needs to be redone. Feels like I can always use another com
 
 ## Setup/Installation Requirements
 
-* _Run `git clone https://github.com/Lilkgb/react-template` in your terminal of choice_
+* _Run `git clone https://github.com/dmonarrez/react-week-1` in your terminal of choice_
 * _Navigate to where you put the folder inside your terminal and run `npm install`_
 * _After the install is complete you can run `npm run start` to see a live version of the website._
 
@@ -40,7 +40,7 @@ _If you run `npm run lint` on pc you will get `Expected linebreaks to be 'LF' bu
 
 ## Support and contact details
 
-_Please contact Ryan McLean at rmcleandev@gmail.com_
+_Please contact David Monarrez at davidmonarrez3@gmail.com_
 
 ## Technologies Used
 
@@ -54,4 +54,4 @@ _AOS_
 
 *This Software is Licensed under the MIT License.*
 
-Copyright (c) 2019 **_Ryan McLean_**
+Copyright (c) 2019 **_David Monarrez_**

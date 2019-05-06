@@ -1,26 +1,57 @@
 import React from 'react';
 import TheHouses from './HouseList';
+import Bookmarked from './BookmarkedHouse';
 import houses from '../model/houses.js';
+import { v4 } from 'uuid';
 
 class DisplayHouseList extends React.Component {
   constructor(props) {
     super(props);
-    let state = {
+    this.state = {
       bookmarked: [],
     }
+    this.addItem = this.addItem.bind(this);
+    this.removeItem = this.removeItem.bind(this);
   }
 
-  addItem(event) {
-    event.preventDefault();
-    const {bookmarked} = this.state;
-    const newItem = 'test';
+  addItem(houseInfo) {
+    console.log(houseInfo)
+    let newState = this.state.bookmarked;
+      newState.push(houseInfo);
+    this.setState({bookmarked: newState})
+  }
 
-    this.setState({
-      bookmarked: [...this.state.bookmarked, newItem]
-    })
+  removeItem(houseId){
+    let newState = this.state.bookmarked;
+
+    for(var i = 0; i < newState.length; i++) {
+      console.log(i);
+      if(newState[i].id === houseId.id) {
+        newState.splice(i, 1);
+      }
+    }
+
+    this.setState({bookmarked: newState})
   }
 
   render() {
+    let added;
+    if(this.state.bookmarked.length === 0) {
+      added = 'none saved'
+      console.log(this.state.bookmarked)
+
+    } else {
+      added = this.state.bookmarked.map((marked) =>
+      <Bookmarked price={marked.price}
+      specs={marked.specs}
+      address={marked.address}
+      id={marked.id}
+      key={marked.id}
+      removeItem={this.removeItem}/>
+      )
+    }
+
+
     return (
       <div>
         <style jsx>{`
@@ -37,17 +68,19 @@ class DisplayHouseList extends React.Component {
         </style>
         <h2>Houses For Sale</h2>
         <div className = 'houseList'>
-          {houses.map((house, index) =>
+          {houses.map((house) =>
             <TheHouses price={house.price}
               specs={house.specs}
               address={house.address}
-              key={index}/>
+              id={house.id}
+              key={house.id}
+              addItem={this.addItem}/>
           )}
         </div>
         <hr/>
         <div className = 'bookmarks'>
           <h2>Bookmarked Houses</h2>
-
+          {added}
         </div>
       </div>
     );

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function TheHouses(props) {
+function Bookmarked(props) {
 
   function sendHouse() {
-    props.addItem({price: props.price, specs: props.specs, address: props.address, id: props.id})
+    props.removeItem({id: props.id})
+    console.log(props.price);
   }
 
   return (
@@ -13,16 +14,16 @@ function TheHouses(props) {
         <p>{props.price}</p>
         <p>{props.specs}</p>
         <p>{props.address}</p>
-        <button onClick = {sendHouse}>Add</button>
+        <button onClick = {sendHouse}>Remove</button>
       </div>
     </div>
   );
 }
 
-TheHouses.propTypes = {
+Bookmarked.propTypes = {
   price: PropTypes.string,
   specs: PropTypes.string,
   address: PropTypes.string
 };
 
-export default TheHouses;
+export default Bookmarked;
